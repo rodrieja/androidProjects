@@ -31,6 +31,8 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
 
         sensorManager = (SensorManager) getSystemService(SENSOR_SERVICE);
         lastUpdate = System.currentTimeMillis();
+
+        AudioPlayer.play(this, R.raw.succeed);
     }
 
     @Override
